@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood House</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .servico {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .servico img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        button {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Wood House" class="logo">
+        <h1>Wood House</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em móveis sob medida, oferecendo qualidade e personalização para seu espaço.</p>
+        <img src="woodhouse.jpg" alt="Wood House">
+    </section>
+    
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servico">
+            <img src="moveis-sob-medida.jpg" alt="Móveis Sob Medida">
+            <h3>Móveis Sob Medida</h3>
+            <p>Projetos exclusivos para cada cliente.</p>
+        </div>
+        <div class="servico">
+            <img src="restauracao.jpg" alt="Restauração de Móveis">
+            <h3>Restauração de Móveis</h3>
+            <p>Deixe seus móveis antigos como novos.</p>
+        </div>
+        <div class="servico">
+            <img src="criativa.jpg" alt="Marcenaria Criativa">
+            <h3>Marcenaria Criativa</h3>
+            <p>Peças personalizadas para decoração.</p>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Wood House - Todos os direitos reservados</p>
+    </footer>
+    
+    <a href="https://wa.me/seunumerodetelefone" class="whatsapp-button">📞</a>
+</body>
+</html>
